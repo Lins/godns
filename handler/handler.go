@@ -1,6 +1,6 @@
 package handler
 
-import "github.com/TimothyYe/godns"
+import "github.com/Lins/godns"
 
 // IHandler is the interface for all DNS handlers
 type IHandler interface {
