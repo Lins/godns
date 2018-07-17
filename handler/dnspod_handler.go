@@ -12,7 +12,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/TimothyYe/godns"
+	"github.com/Lins/godns"
 	"github.com/bitly/go-simplejson"
 	"golang.org/x/net/proxy"
 )
