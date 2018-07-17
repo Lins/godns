@@ -91,9 +91,9 @@ func CheckSettings(config *Settings) error {
 func SendNotify(configuration *Settings, domain, currentIP string) error {
 	m := gomail.NewMessage()
 
-	m.SetHeader("From", configuration.Notify.SMTPUsername)
+	m.SetHeader("From", "DNS Notification")
 	m.SetHeader("To", configuration.Notify.SendTo)
-	m.SetHeader("Subject", "GoDNS Notification")
+	m.SetHeader("Subject", "Notification")
 	log.Println("currentIP:", currentIP)
 	log.Println("domain:", domain)
 	m.SetBody("text/html", buildTemplate(currentIP, domain))
